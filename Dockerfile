@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-CMD ["bash", "-c", "cd /data && source /synapse/bin/activate && synctl start"]
+CMD ["bash", "-c", "sleep 60; cd /data && source /synapse/bin/activate && synctl start"]
 
 EXPOSE 8448
 
