@@ -12,7 +12,7 @@ RUN set -ex export DEBIAN_FRONTEND=noninteractive ; \
                        python-pip python-setuptools sqlite3 \
                        libssl-dev python-virtualenv libjpeg-dev libxslt1-dev ; \
     virtualenv -p python2.7 /synapse; \
-    bash -c 'source /synapse/bin/activate; pip install --upgrade pip; pip install --upgrade setuptools; pip install https://github.com/matrix-org/synapse/tarball/master';
+    bash -c 'source /synapse/bin/activate; pip install --upgrade pip; pip install --upgrade setuptools; pip install lxml; pip install https://github.com/matrix-org/synapse/tarball/master';
 
 
 
